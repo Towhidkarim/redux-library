@@ -28,6 +28,8 @@ A full-featured library management web application built with **React**, **Vite*
 | **Shadcn UI**    | Beautiful UI components       |
 | **Tailwind CSS** | Utility-first CSS framework   |
 
+MongoDB with Mongoose for the Database in the backend and ExpressJs for the API
+
 ---
 
 ## 🔗 Routes Overview
@@ -47,7 +49,7 @@ A full-featured library management web application built with **React**, **Vite*
 
 🌐 **Live Backend API**: [library-api-737v.onrender.com](https://library-api-737v.onrender.com/)
 
-Built with ExpressJs
+Built with ExpressJs and MongoDB with Mongoose. Visit the repository below for more information
 
 Github: [Library API Repository](https://github.com/Towhidkarim/library-api)
 
