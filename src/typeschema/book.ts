@@ -12,7 +12,7 @@ export const bookSchema = z.object({
     'BIOGRAPHY',
     'FANTASY',
   ]),
-  isbn: z.string(),
+  isbn: z.string().min(3),
   description: z.string().optional(),
   copies: z.number().nonnegative(),
   available: z.boolean(),

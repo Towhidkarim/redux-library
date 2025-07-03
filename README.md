@@ -1,69 +1,93 @@
-# React + TypeScript + Vite
+# 📚 Redux Library App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured library management web application built with **React**, **Vite**, **Redux Toolkit Query**, **Shadcn UI**, and **Zod**. This system allows users to manage books and track borrowing activities with a clean and intuitive interface.
 
-Currently, two official plugins are available:
+🌐 **Live Site**: [redux-library.vercel.app](https://redux-library.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- View all books
+- Add a new book
+- Edit existing books
+- Delete books
+- Borrow a book
+- View an aggreagate summary of borrowed books
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Technology       | Description                   |
+| ---------------- | ----------------------------- |
+| **React**        | Frontend UI library           |
+| **Vite**         | Fast development build tool   |
+| **RTK Query**    | API data fetching and caching |
+| **Zod**          | Schema validation for forms   |
+| **Shadcn UI**    | Beautiful UI components       |
+| **Tailwind CSS** | Utility-first CSS framework   |
+
+---
+
+## 🔗 Routes Overview
+
+| Path              | Description                         |
+| ----------------- | ----------------------------------- |
+| `/books`          | Displays a list of all books        |
+| `/create-book`    | Form to add a new book              |
+| `/books/:id`      | Detailed view of a single book      |
+| `/edit-book/:id`  | Edit form to update book details    |
+| `/borrow/:bookId` | Borrow form for a specific book     |
+| `/borrow-summary` | Shows summary of all borrowed books |
+
+---
+
+## 🔗 Backend
+
+🌐 **Live Backend API**: [library-api-737v.onrender.com](https://library-api-737v.onrender.com/)
+
+Built with ExpressJs
+
+Github: [Library API Repository](https://github.com/Towhidkarim/library-api)
+
+---
+
+## 🧪 Validation
+
+All forms are validated using **Zod** ensuring strong type safety and user-friendly feedback.
+
+---
+
+## 🧰 Setup Instructions
+
+1. **Clone the repository and initialize**
+
+```bash
+git clone https://github.com/your-username/redux-library.git
+cd redux-library
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+npm install
+# or
+pnpm install
+# or
+bun install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Star Development Server**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+#or
+pnpm dev
+#or
+bun dev
+```
+
+3. **Visit**
+
+```bash
+http://localhost:5173
 ```
