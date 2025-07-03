@@ -54,8 +54,8 @@ export default function BorrowPage() {
       dueDate: values.dueDate,
     });
     if (res.data?.success) {
-      navigate('/');
-      toast(`Succesfully borrowed ${values.quantity} book(s)`);
+      navigate('/borrow-summary');
+      toast(`Succesfully borrowed ${values.quantity} copies(s)`);
     }
   };
 

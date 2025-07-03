@@ -60,7 +60,7 @@ export default function CreateBook() {
       toast('Book Created Succesfully!', {
         description: 'Redirecting to Homepage',
       });
-      setTimeout(() => navigate('/'), 1500);
+      setTimeout(() => navigate('/books'), 500);
     } else toast('Something Went Wrong');
   };
   const formOnReset = () => {
