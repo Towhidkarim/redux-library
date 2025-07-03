@@ -55,7 +55,7 @@ export default function BorrowPage() {
     });
     if (res.data?.success) {
       navigate('/borrow-summary');
-      toast(`Succesfully borrowed ${values.quantity} copies(s)`);
+      toast(`Succesfully borrowed ${values.quantity} copy(s)`);
     }
   };
 

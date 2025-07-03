@@ -71,7 +71,7 @@ export default function EditBookPage() {
     else formValues.available = false;
     const res = await updateBook({ id: data.data._id!, bookData: formValues });
     if (res.data?.success) {
-      navigate('/');
+      navigate('/books');
       toast('Book Updated Succesfully!', {
         description: 'Redirecting to Homepage',
       });

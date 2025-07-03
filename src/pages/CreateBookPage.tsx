@@ -58,7 +58,7 @@ export default function CreateBook() {
     const res = await createBook(formValues);
     if (res.data?.success) {
       toast('Book Created Succesfully!', {
-        description: 'Redirecting to Homepage',
+        description: 'Redirecting to All Books Page',
       });
       setTimeout(() => navigate('/books'), 500);
     } else toast('Something Went Wrong');
