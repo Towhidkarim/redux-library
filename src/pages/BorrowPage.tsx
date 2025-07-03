@@ -72,7 +72,7 @@ export default function BorrowPage() {
       </h1>
     );
   return (
-    <div className='mx-auto my-20 max-w-2xl'>
+    <div className='mx-auto my-20 px-4 max-w-2xl'>
       <h1 className='mt-10 mb-2 font-bold text-3xl text-center'>
         Borrow Book: {data.data.title}
       </h1>
